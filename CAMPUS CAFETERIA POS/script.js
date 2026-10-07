@@ -7,37 +7,37 @@ const products = [
         id: 1,
         name: "Rice (Plain)",
         price: 15.00,
-        icon: "🍚"
+        image: "images/rice.jfif"
     },
     {
         id: 2,
         name: "Fried Chicken (1 pc)",
         price: 65.00,
-        icon: "🍗"
+        image: "images/fried chicken.jfif"
     },
     {
         id: 3,
         name: "Pork Adobo",
         price: 60.00,
-        icon: "🍖"
+        image: "images/Pork Adobo.jfif"
     },
     {
         id: 4,
         name: "Vegetable Side Dish",
         price: 35.00,
-        icon: "🥗"
+        image: "images/Vegetables.jfif"
     },
     {
         id: 5,
         name: "Iced Tea (cup)",
         price: 20.00,
-        icon: "🧋"
+        image: "images/Ice Tea.jfif"
     },
     {
         id: 6,
         name: "Bottled Water",
         price: 20.00,
-        icon: "💧"
+        image: "images/Mineral Water.jfif"
     }
 ];
 
@@ -105,9 +105,7 @@ function displayProducts() {
         productCard.className = "product-card";
 
         productCard.innerHTML = `
-            <div class="product-icon">
-                ${product.icon}
-            </div>
+            <img class="product-image" src="${product.image}" alt="${product.name}">
 
             <div class="product-name">
                 ${product.name}
